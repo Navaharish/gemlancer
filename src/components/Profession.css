@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+}
+
+.profession-container {
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.profession-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 20px;
+    /* Space between boxes */
+    margin: 20px auto;
+    /* Center the grid */
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    /* Optional: limit the max width */
+}
+
+.profession-box {
+    background-color: #fff;
+    /* White background for boxes */
+    color: #000;
+    /* Black text */
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Drop shadow */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+.profession-box:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    /* Lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .profession-grid {
+        grid-template-columns: 1fr;
+        /* Stack boxes on small screens */
+    }
+}

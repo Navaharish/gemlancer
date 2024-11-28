@@ -1,0 +1,66 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Light background */
+    color: #333;
+    /* Dark text */
+}
+
+.completed-task-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    height: 100%;
+
+    /* Full height */
+    padding: 20px;
+    text-align: center;
+    /* Center text */
+}
+
+.congratulations-title {
+    font-size: 28px;
+    /* Font size for the title */
+    margin-bottom: 20px;
+    /* Space below the title */
+}
+
+.animation-container {
+    width: 300px;
+    /* Set a width for the animation */
+    height: 300px;
+    /* Set a height for the animation */
+    margin-bottom: 20px;
+    /* Space below the animation */
+}
+
+.next-button {
+    padding: 15px 30px;
+    /* Padding for button */
+    background-color: #007bff;
+    /* Button color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
