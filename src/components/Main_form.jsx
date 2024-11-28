@@ -2,7 +2,7 @@ import LoginButton from "./G_login";
 import LogoutButton from "./G_logout";
 import '../components/Main_form.css';
 import { useState, useEffect } from 'react'
-
+import { createBrowserRouter } from "react-router-dom";
 
 function App() {
     const [name, setName] = useState('');
@@ -32,6 +32,32 @@ function App() {
                         required
                     />
                 </div>
+
+                <div>
+                    <label htmlFor="name">Your Profession:</label>
+                    <input
+                        type="text"
+                        id="Profession"
+                        name="Profession"
+                        placeholder="Enter your profession"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="name">Rate Your skill:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
+
                 <div>
                     <label htmlFor="password">Password:</label>
                     <input
@@ -44,10 +70,10 @@ function App() {
                     />
                 </div>
                 <button type="submit">Submit</button>
-                <p>or</p>
+                <p style={{ textAlign: 'center', margin: '5px' }}>or</p>
                 <div className="form_btn">
                     <LoginButton />
-                    <LogoutButton />
+                    {/* <LogoutButton /> */}
                 </div>
             </form>
 
